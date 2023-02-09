@@ -127,7 +127,7 @@ download_xui(){
         fi
     else
         last_version=$1
-        url="https://github.com/Anonymous61721/x-ui-english/releases/download/${last_version}/x-ui-linux-$(archAffix).tar.gz"
+        url="https://github.com/Anonymous61721/x-ui-english/releases/download/${last_version}/x-ui-english-$(archAffix).tar.gz"
         yellow "Starting installation x-ui $1"
         wget -N --no-check-certificate -O /usr/local/x-ui-linux-$(archAffix).tar.gz ${url}
         if [[ $? -ne 0 ]]; then
